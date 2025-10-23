@@ -15,6 +15,12 @@
     Plugin IDs      : N/A
     STIG-ID         : WN11-CC-000315
 
+.TESTED ON
+    Date(s) Tested  : 
+    Tested By       : 
+    Systems Tested  : 
+    PowerShell Ver. : 
+
 .USAGE
     Run PowerShell as Administrator.
     Example syntax:
