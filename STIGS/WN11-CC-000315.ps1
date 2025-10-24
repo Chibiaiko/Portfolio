@@ -1,4 +1,3 @@
-
 <#
 .SYNOPSIS
     Disables AlwaysInstallElevated to prevent MSI packages from installing with elevated privileges 
