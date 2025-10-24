@@ -1,5 +1,4 @@
 <#
-
 .SYNOPSIS
   Apply STIG WN11-CC-000200: set HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\CredUI\EnumerateAdministrators to 0 (REG_DWORD).
 
