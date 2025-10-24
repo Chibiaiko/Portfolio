@@ -24,7 +24,6 @@ Put any usage instructions here.
 
 Example syntax:
 PS C:\> .\WN11_CC_000200.ps1 -WhatIf
-
 #>
 
 param(
