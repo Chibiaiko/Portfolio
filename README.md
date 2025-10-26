@@ -14,6 +14,7 @@ A curated collection of PowerShell scripts developed to automate the remediation
 This collection serves as a reliable resource for organizations and professionals seeking to strengthen compliance postures and streamline the process of meeting Windows 10 security benchmarks.
 # #
 
+
 # 🕵️‍♂️ Threat Hunting Playbook Collection
 
 A curated collection of **threat hunting playbooks** and **detection scripts** developed to automate the identification, investigation, and validation of suspicious activity across enterprise environments.
@@ -26,7 +27,6 @@ Each playbook follows a standardized format and includes:
 
 These playbooks have been thoughtfully designed and curated to ensure alignment with the latest **threat intelligence**, **detection engineering methodologies**, and **industry best practices**.
 
----
 
 # Overview
 
@@ -39,7 +39,6 @@ Whether executed in a simulated environment or integrated into an active SOC wor
 - Develop repeatable hunting procedures  
 - Improve analytical tradecraft and threat attribution  
 
----
 
 # Benefits
 
@@ -49,7 +48,6 @@ By leveraging structured hunt methodologies and automated tooling, this collecti
 - Strengthen defensive posture  
 - Accelerate the hunt-to-detect lifecycle  
 
----
 
 # License
 
