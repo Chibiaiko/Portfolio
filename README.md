@@ -25,6 +25,7 @@ Each playbook follows a standardized format and includes:
 - Complete mapping to relevant **MITRE ATT&CK** techniques (e.g., `T1059.001 – PowerShell`)
 
 These playbooks have been thoughtfully designed and curated to ensure alignment with the latest **threat intelligence**, **detection engineering methodologies**, and **industry best practices**.
+
 ---
 
 ## Overview
@@ -37,6 +38,7 @@ Whether executed in a simulated environment or integrated into an active SOC wor
 - Validate visibility and telemetry coverage  
 - Develop repeatable hunting procedures  
 - Improve analytical tradecraft and threat attribution  
+
 ---
 
 ## Benefits
@@ -46,6 +48,7 @@ By leveraging structured hunt methodologies and automated tooling, this collecti
 - Proactively uncover hidden threats  
 - Strengthen defensive posture  
 - Accelerate the hunt-to-detect lifecycle  
+
 ---
 
 ### License
