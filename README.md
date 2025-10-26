@@ -6,7 +6,7 @@
 
 
 Showcasing practical expertise in Threat Hunting, SecOps, and Vulnerability Management through real-world projects.
-# #
+---
 
 # 🛡️🧰⚙️ Windows 10 STIG Remediation Scripts 
 
@@ -28,7 +28,7 @@ These playbooks have been thoughtfully designed and curated to ensure alignment 
 
 ---
 
-## Overview
+# Overview
 
 This collection provides analysts and defenders with a reliable foundation for building, testing, and refining hunt hypotheses against real-world adversary behaviors.
 
@@ -41,7 +41,7 @@ Whether executed in a simulated environment or integrated into an active SOC wor
 
 ---
 
-## Benefits
+# Benefits
 
 By leveraging structured hunt methodologies and automated tooling, this collection enables defenders to:
 
@@ -51,6 +51,6 @@ By leveraging structured hunt methodologies and automated tooling, this collecti
 
 ---
 
-### License
+# License
 
 This project is released under the **MIT License**. Use freely, but attribution is appreciated.
