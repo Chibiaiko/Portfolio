@@ -16,11 +16,38 @@ This collection serves as a reliable resource for organizations and professional
 
 # 🕵️‍♂️ Threat Hunting Playbook Collection
 
-A curated collection of threat hunting playbooks and detection scripts developed to automate the identification, investigation, and validation of suspicious activity across enterprise environments. Each playbook follows a standardized format and includes detailed metadata, clear execution guidance, and complete mapping to relevant MITRE ATT&CK techniques (e.g., T1059.001 – PowerShell).
-These playbooks have been thoughtfully designed and curated to ensure alignment with the latest threat intelligence, detection engineering methodologies, and industry best practices. The collection provides analysts and defenders with a reliable foundation for building, testing, and refining hunt hypotheses against real-world adversary behaviors.
+A curated collection of **threat hunting playbooks** and **detection scripts** developed to automate the identification, investigation, and validation of suspicious activity across enterprise environments.
+
+Each playbook follows a standardized format and includes:
+
+- Detailed metadata  
+- Clear execution guidance  
+- Complete mapping to relevant **MITRE ATT&CK** techniques (e.g., `T1059.001 – PowerShell`)
+
+These playbooks have been thoughtfully designed and curated to ensure alignment with the latest **threat intelligence**, **detection engineering methodologies**, and **industry best practices**.
+---
+
+## Overview
+
+This collection provides analysts and defenders with a reliable foundation for building, testing, and refining hunt hypotheses against real-world adversary behaviors.
+
 Whether executed in a simulated environment or integrated into an active SOC workflow, these threat hunting playbooks serve as a practical resource for organizations seeking to:
-Enhance detection and response maturity
-Validate visibility and telemetry coverage
-Develop repeatable hunting procedures
-Improve analytical tradecraft and threat attribution 
-By leveraging structured hunt methodologies and automated tooling, this collection enables defenders to proactively uncover hidden threats, strengthen defensive posture, and accelerate the hunt-to-detect lifecycle.
+
+- Enhance detection and response maturity  
+- Validate visibility and telemetry coverage  
+- Develop repeatable hunting procedures  
+- Improve analytical tradecraft and threat attribution  
+---
+
+## Benefits
+
+By leveraging structured hunt methodologies and automated tooling, this collection enables defenders to:
+
+- Proactively uncover hidden threats  
+- Strengthen defensive posture  
+- Accelerate the hunt-to-detect lifecycle  
+---
+
+### License
+
+This project is released under the **MIT License**. Use freely, but attribution is appreciated.
