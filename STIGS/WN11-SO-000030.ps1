@@ -28,55 +28,53 @@ Example syntax:
 PS C:\> .\Enable-AdvancedAuditPolicyOverride.ps1
 #>
 
-# --- Log file ---
-$logFile = "C:\STIG_Logs\WN11_AuditPolicyOverride.txt"
-if (!(Test-Path "C:\STIG_Logs")) { 
-    New-Item -Path "C:\STIG_Logs" -ItemType Directory | Out-Null 
+<#
+.SYNOPSIS
+Checks and fixes the SCENoApplyLegacyAuditPolicy registry setting.
+
+.DESCRIPTION
+Ensures that the registry value:
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\SCENoApplyLegacyAuditPolicy
+exists and is set to 1 (Enabled). If not, the script will create or correct it.
+
+#>
+
+# Define registry key and value details
+$RegPath = "HKLM:\SYSTEM\CurrentControlSet\Control\Lsa"
+$ValueName = "SCENoApplyLegacyAuditPolicy"
+$DesiredValue = 1
+
+Write-Host "Checking registry value: $RegPath\$ValueName ..." -ForegroundColor Cyan
+
+# Check if the registry key exists
+if (-not (Test-Path $RegPath)) {
+    Write-Host "Registry path does not exist. Creating it..." -ForegroundColor Yellow
+    New-Item -Path $RegPath -Force | Out-Null
 }
 
-# --- Admin check ---
-if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()
-    ).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-    Write-Host "❌ ERROR: Script must be run as Administrator."
-    Add-Content $logFile "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - FAIL - Not run as Administrator."
-    exit 1
-}
-
-Write-Host "`n=== STIG WN11 Advanced Audit Policy Override ===`n"
-
-# --- Enable Advanced Audit Policy override ---
+# Check if the value exists
 try {
-    Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Lsa" `
-                     -Name "SCENoApplyLegacyAuditPolicy" -Value 1 -Type DWord -Force
-    Write-Host "✅ Advanced Audit Policy override enabled."
-    Add-Content $logFile "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - Advanced Audit Policy override enabled."
+    $CurrentValue = Get-ItemProperty -Path $RegPath -Name $ValueName -ErrorAction Stop | Select-Object -ExpandProperty $ValueName
+    Write-Host "Current value: $CurrentValue"
 } catch {
-    Write-Host "❌ Failed to set SCENoApplyLegacyAuditPolicy. $_"
-    Add-Content $logFile "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - FAIL - Cannot set SCENoApplyLegacyAuditPolicy."
-    exit 1
+    Write-Host "Registry value does not exist. Creating it..." -ForegroundColor Yellow
+    $CurrentValue = $null
 }
 
-# --- Force Local Group Policy refresh ---
-try {
-    Write-Host "🔄 Refreshing local group policy..."
-    gpupdate /force | Out-Null
-    Start-Sleep -Seconds 5
-    Write-Host "✅ Group Policy refreshed."
-    Add-Content $logFile "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - Local Group Policy refreshed."
-} catch {
-    Write-Host "❌ Failed to refresh Group Policy. $_"
-    Add-Content $logFile "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - FAIL - Cannot refresh Group Policy."
-}
-
-# --- Verification ---
-$registryCheck = (Get-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Lsa" `
-                  -Name "SCENoApplyLegacyAuditPolicy").SCENoApplyLegacyAuditPolicy
-
-if ($registryCheck -eq 1) {
-    Write-Host "`n✅ PASS: Advanced Audit Policy override is ENABLED."
-    Add-Content $logFile "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - PASS: Advanced Audit Policy override is ENABLED."
+# Compare and fix if needed
+if ($CurrentValue -ne $DesiredValue) {
+    Write-Host "Updating registry value to $DesiredValue ..." -ForegroundColor Yellow
+    Set-ItemProperty -Path $RegPath -Name $ValueName -Value $DesiredValue -Type DWord
+    Write-Host "Registry value updated successfully!" -ForegroundColor Green
 } else {
-    Write-Host "`n❌ FAIL: Advanced Audit Policy override is NOT enabled."
-    Add-Content $logFile "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss') - FAIL: Advanced Audit Policy override is NOT enabled."
-    exit 1
+    Write-Host "Registry value is already correctly configured." -ForegroundColor Green
+}
+
+# Verification step
+$Verify = Get-ItemProperty -Path $RegPath -Name $ValueName | Select-Object -ExpandProperty $ValueName
+Write-Host "Final configured value: $Verify"
+if ($Verify -eq $DesiredValue) {
+    Write-Host "✅ Configuration is correct." -ForegroundColor Green
+} else {
+    Write-Host "❌ Configuration is incorrect. Please check permissions or rerun as Administrator." -ForegroundColor Red
 }
