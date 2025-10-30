@@ -14,10 +14,10 @@ Plugin IDs    : N/A
 STIG-ID       : WN11-AC-000010
 
 .TESTED ON
-Date(s) Tested :
-Tested By      :
-Systems Tested :
-PowerShell Ver. :
+    Date(s) Tested  : 2025-10-28
+    Tested By       : Alexis McGuire
+    Systems Tested  : Windows 11 (PowerShell 5.1)
+    PowerShell Ver. : Windows PowerShell 5.1 (ISE)
 
 .USAGE
 This script checks and enforces the Account Lockout Threshold policy to ensure it is set to 3 or less and not 0.
