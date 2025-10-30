@@ -14,14 +14,14 @@ Plugin IDs   : N/A
 STIG-ID      : WN11-SO-000030
 
 .TESTED ON
-Date(s) Tested :
-Tested By      :
-Systems Tested :
-PowerShell Ver.:
+    Date(s) Tested  : 2025-10-27
+    Tested By       : Alexis McGuire
+    Systems Tested  : Windows 11 (PowerShell 5.1)
+    PowerShell Ver. : Windows PowerShell 5.1 (ISE)
 
 .USAGE
-This script enables the Advanced Audit Policy override on Windows 11 systems to ensure STIG compliance.
-Run as Administrator. Refreshes local group policy after applying the setting.
+    This script enables the Advanced Audit Policy override on Windows 11 systems to ensure STIG compliance.
+    Run as Administrator. Refreshes local group policy after applying the setting.
 
 Example syntax:
 
