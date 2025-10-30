@@ -15,10 +15,10 @@
     STIG-ID         : WN11-EP-000310
 
 .TESTED ON
-    Date(s) Tested  : 
-    Tested By       : 
-    Systems Tested  : 
-    PowerShell Ver. : 
+    Date(s) Tested  : 2025-10-23
+    Tested By       : Alexis McGuire
+    Systems Tested  : Windows 11 (PowerShell 5.1)
+    PowerShell Ver. : Windows PowerShell 5.1 (ISE)
 
 .USAGE
     Run PowerShell as Administrator.
