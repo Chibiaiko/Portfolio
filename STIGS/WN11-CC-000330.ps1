@@ -21,7 +21,7 @@ STIG-ID       : WN11-CC-000330
     PowerShell Ver. : Windows PowerShell 5.1 (ISE)
 
 .USAGE
-This script checks and enforces the WinRM Client 'AllowBasic' registry setting to ensure it is set to 0 (disabled).
+    This script checks and enforces the WinRM Client 'AllowBasic' registry setting to ensure it is set to 0 (disabled).
 
 Example syntax:
 
