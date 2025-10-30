@@ -14,7 +14,7 @@ Plugin IDs   : N/A
 STIG-ID      : WIN11-00-000175
 
 .TESTED ON
-    Date(s) Tested  : 2025-10-30
+    Date(s) Tested  : 2025-10-24
     Tested By       : Alexis McGuire
     Systems Tested  : Windows 11 (PowerShell 5.1)
     PowerShell Ver. : Windows PowerShell 5.1 (ISE)
