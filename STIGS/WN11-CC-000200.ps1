@@ -14,11 +14,11 @@ Plugin IDs : N/A
 STIG-ID : WN11-CC-000200
 
 .TESTED ON
-Date(s) Tested :
-Tested By :
-Systems Tested :
-PowerShell Ver. :
-
+    Date(s) Tested  : 2025-10-24
+    Tested By       : Alexis McGuire
+    Systems Tested  : Windows 11 (PowerShell 5.1)
+    PowerShell Ver. : Windows PowerShell 5.1 (ISE)
+    
 .USAGE
 Put any usage instructions here.
 
