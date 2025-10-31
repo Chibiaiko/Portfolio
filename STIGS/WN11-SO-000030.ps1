@@ -3,15 +3,15 @@
     Enable Advanced Audit Policy override for Windows 11 (STIG-compliant)
 
 .NOTES
-Author       : Alexis McGuire
-LinkedIn     : linkedin.com/in/alexismcguire1/
-GitHub       : github.com/Chibiaiko
-Date Created : 2025-10-27
-Last Modified: 2025-10-27
-Version      : 1.0
-CVEs         : N/A
-Plugin IDs   : N/A
-STIG-ID      : WN11-SO-000030
+    Author       : Alexis McGuire
+    LinkedIn     : linkedin.com/in/alexismcguire1/
+    GitHub       : github.com/Chibiaiko
+    Date Created : 2025-10-27
+    Last Modified: 2025-10-27
+    Version      : 1.0
+    CVEs         : N/A
+    Plugin IDs   : N/A
+    STIG-ID      : WN11-SO-000030
 
 .TESTED ON
     Date(s) Tested  : 2025-10-27
