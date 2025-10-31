@@ -1,7 +1,8 @@
 
 <#
 .SYNOPSIS
-    Remediates and verifies that the WinRM Client 'AllowBasic' registry setting is set to 0 (disabled) in accordance with STIG requirements.
+    Remediates and verifies that the WinRM Client 'AllowBasic' registry setting is set to 0 (disabled)
+    in accordance with STIG requirements.
 
 .NOTES
     Author        : Alexis McGuire
