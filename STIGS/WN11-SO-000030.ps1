@@ -24,8 +24,7 @@
     Run as Administrator. Refreshes local group policy after applying the setting.
 
 Example syntax:
-
-PS C:\> .\Enable-AdvancedAuditPolicyOverride.ps1
+    PS C:\> .\Enable-AdvancedAuditPolicyOverride.ps1
 #>
 
 <#
