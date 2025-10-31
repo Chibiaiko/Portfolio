@@ -3,15 +3,15 @@
   Apply STIG WN11-CC-000310: set HKLM:\SOFTWARE\Policies\Microsoft\Windows\Installer\EnableUserControl to 0 (Disabled).
 
 .NOTES
-Author : Alexis McGuire
-LinkedIn : linkedin.com/in/alexismcguire1/
-GitHub : github.com/Chibiaiko
-Date Created : 2025-10-24
-Last Modified : 2025-10-24
-Version : 1.0
-CVEs : N/A
-Plugin IDs : N/A
-STIG-ID : WN11-CC-000310
+  Author : Alexis McGuire
+  LinkedIn : linkedin.com/in/alexismcguire1/
+  GitHub : github.com/Chibiaiko
+  Date Created : 2025-10-24
+  Last Modified : 2025-10-24
+  Version : 1.0
+  CVEs : N/A
+  Plugin IDs : N/A
+  STIG-ID : WN11-CC-000310
 
 .TESTED ON
     Date(s) Tested  : 2025-10-24
@@ -20,7 +20,7 @@ STIG-ID : WN11-CC-000310
     PowerShell Ver. : Windows PowerShell 5.1 (ISE)
 
 .USAGE
-Put any usage instructions here.
+  Put any usage instructions here.
 
 Example syntax:
 PS C:\> .\WN11_CC_000310.ps1
