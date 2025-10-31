@@ -21,7 +21,8 @@
 
 .USAGE
     Disables IPv6 source routing to prevent packet redirection attacks.
-    Example:
+   
+    Example syntax:
     PS C:\> .\WN11-CC-000020_DisableIPv6SourceRouting.ps1
 #>
 
