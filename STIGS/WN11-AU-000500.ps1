@@ -22,6 +22,7 @@
 .USAGE
     Save this script as: WN11-AU-000500.ps1
     Run PowerShell ISE as Administrator, then press F5 to execute.
+    
     Example syntax:
     PS C:\> .\WN11-AU-000500.ps1
 #>
