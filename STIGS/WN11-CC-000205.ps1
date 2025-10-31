@@ -3,15 +3,15 @@
     Apply STIG WN11-CC-000205: set HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection\AllowTelemetry to 0 (Security) or 1 (Basic).
 
 .NOTES
-Author         : Alexis McGuire
-LinkedIn       : linkedin.com/in/alexismcguire1/
-GitHub         : github.com/Chibiaiko
-Date Created   : 2025-10-24
-Last Modified  : 2025-10-24
-Version        : 1.0
-CVEs           : N/A
-Plugin IDs     : N/A
-STIG-ID        : WN11-CC-000205
+    Author         : Alexis McGuire
+    LinkedIn       : linkedin.com/in/alexismcguire1/
+    GitHub         : github.com/Chibiaiko
+    Date Created   : 2025-10-24
+    Last Modified  : 2025-10-24
+    Version        : 1.0
+    CVEs           : N/A
+    Plugin IDs     : N/A
+    STIG-ID        : WN11-CC-000205
 
 .TESTED ON
     Date(s) Tested  : 2025-10-24
