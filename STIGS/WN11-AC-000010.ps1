@@ -1,17 +1,17 @@
 <#
 .SYNOPSIS
-Remediates and verifies that the Account Lockout Threshold is set to 3 or less, in accordance with STIG requirements.
+    Remediates and verifies that the Account Lockout Threshold is set to 3 or less, in accordance with STIG requirements.
 
 .NOTES
-Author        : Alexis McGuire
-LinkedIn      : linkedin.com/in/alexismcguire1/
-GitHub        : github.com/Chibiaiko
-Date Created  : 2025-10-28
-Last Modified : 2025-10-28
-Version       : 1.0
-CVEs          : N/A
-Plugin IDs    : N/A
-STIG-ID       : WN11-AC-000010
+    Author        : Alexis McGuire
+    LinkedIn      : linkedin.com/in/alexismcguire1/
+    GitHub        : github.com/Chibiaiko
+    Date Created  : 2025-10-28
+    Last Modified : 2025-10-28
+    Version       : 1.0
+    CVEs          : N/A
+    Plugin IDs    : N/A
+    STIG-ID       : WN11-AC-000010
 
 .TESTED ON
     Date(s) Tested  : 2025-10-28
@@ -20,11 +20,11 @@ STIG-ID       : WN11-AC-000010
     PowerShell Ver. : Windows PowerShell 5.1 (ISE)
 
 .USAGE
-This script checks and enforces the Account Lockout Threshold policy to ensure it is set to 3 or less and not 0.
+    This script checks and enforces the Account Lockout Threshold policy to ensure it is set to 3 or less and not 0.
 
 Example syntax:
+    PS C:\> .\__remediation_template(WN11-AC-000010).ps1
 
-PS C:\> .\__remediation_template(WN11-AC-000010).ps1
 #>
 
 # =====================================================================
