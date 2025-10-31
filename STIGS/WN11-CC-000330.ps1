@@ -25,8 +25,7 @@
     This script checks and enforces the WinRM Client 'AllowBasic' registry setting to ensure it is set to 0 (disabled).
 
 Example syntax:
-
-PS C:\> .\__remediation_template(WN11-CC-000330).ps1
+    PS C:\> .\__remediation_template(WN11-CC-000330).ps1
 #>
 
 # =====================================================================
