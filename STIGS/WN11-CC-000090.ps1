@@ -21,6 +21,7 @@
 
 .USAGE
     Run this script with administrative privileges to ensure the registry key is set per STIG requirements.
+   
     Example syntax:
     PS C:\> .\Set-NoGPOListChanges.ps1
 #>
