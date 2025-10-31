@@ -1,17 +1,17 @@
 <#
 .SYNOPSIS
-Remediates STIG WIN11-00-000175 by disabling the Secondary Logon service.
+    Remediates STIG WIN11-00-000175 by disabling the Secondary Logon service.
 
 .NOTES
-Author       : Alexis McGuire
-LinkedIn     : linkedin.com/in/alexismcguire1/
-GitHub       : github.com/Chibiaiko
-Date Created : 2025-10-24
-Last Modified: 2025-10-24
-Version      : 1.0
-CVEs         : N/A
-Plugin IDs   : N/A
-STIG-ID      : WIN11-00-000175
+    Author       : Alexis McGuire
+    LinkedIn     : linkedin.com/in/alexismcguire1/
+    GitHub       : github.com/Chibiaiko
+    Date Created : 2025-10-24
+    Last Modified: 2025-10-24
+    Version      : 1.0
+    CVEs         : N/A
+    Plugin IDs   : N/A
+    STIG-ID      : WIN11-00-000175
 
 .TESTED ON
     Date(s) Tested  : 2025-10-24
@@ -20,11 +20,12 @@ STIG-ID      : WIN11-00-000175
     PowerShell Ver. : Windows PowerShell 5.1 (ISE)
     
 .USAGE
-Put any usage instructions here.
+    Put any usage instructions here.
 
-Example syntax:
-PS C:\> .\__remediation_template(WIN11-00-000175).ps1
+    Example syntax:
+        PS C:\> .\__remediation_template(WIN11-00-000175).ps1
 #>
+
 
 # Disable Secondary Logon service (STIG WIN11-00-000175)
 $serviceName = "seclogon"
