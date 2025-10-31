@@ -1,19 +1,19 @@
 
 <#
 .SYNOPSIS
-Remediates and verifies that the WinRM Client 'AllowBasic' registry setting is set to 0 (disabled) in accordance with STIG requirements.
+    Remediates and verifies that the WinRM Client 'AllowBasic' registry setting is set to 0 (disabled) in accordance with STIG requirements.
 
 .NOTES
-Author        : Alexis McGuire
-LinkedIn      : linkedin.com/in/alexismcguire1/
-GitHub        : github.com/Chibiaiko
-Date Created  : 2025-10-28
-Last Modified : 2025-10-28
-Version       : 1.0
-CVEs          : N/A
-Plugin IDs    : N/A
-STIG-ID       : WN11-CC-000330
-
+    Author        : Alexis McGuire
+    LinkedIn      : linkedin.com/in/alexismcguire1/
+    GitHub        : github.com/Chibiaiko
+    Date Created  : 2025-10-28
+    Last Modified : 2025-10-28
+    Version       : 1.0
+    CVEs          : N/A
+    Plugin IDs    : N/A
+    STIG-ID       : WN11-CC-000330
+    
 .TESTED ON
     Date(s) Tested  : 2025-10-28
     Tested By       : Alexis McGuire
