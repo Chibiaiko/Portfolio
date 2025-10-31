@@ -22,6 +22,7 @@
 
 .USAGE
     Run PowerShell as Administrator.
+    
     Example syntax:
     PS C:\> .\Set-AlwaysInstallElevated.ps1
 #>
