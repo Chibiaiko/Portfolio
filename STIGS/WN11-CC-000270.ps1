@@ -21,8 +21,9 @@
 
 .USAGE
     Disables the saving of Remote Desktop passwords to enhance credential security.
-    Example:
-    PS C:\> .\WN11-CC-000270_DisablePasswordSaving.ps1
+    
+    Example syntax:
+        PS C:\> .\WN11-CC-000270_DisablePasswordSaving.ps1
 #>
 
 # Set DisablePasswordSaving to 1 (Do not allow passwords to be saved)
