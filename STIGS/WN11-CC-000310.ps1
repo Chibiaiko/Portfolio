@@ -23,8 +23,8 @@
     Put any usage instructions here.
 
 Example syntax:
-PS C:\> .\WN11_CC_000310.ps1
-PS C:\> .\WN11_CC_000310.ps1 -WhatIf
+    PS C:\> .\WN11_CC_000310.ps1
+    PS C:\> .\WN11_CC_000310.ps1 -WhatIf
 #>
 
 param(
