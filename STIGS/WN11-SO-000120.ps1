@@ -21,8 +21,9 @@
 
 .USAGE
     Ensures SMB server communications are digitally signed for integrity protection.
-    Example:
-    PS C:\> .\WN11-SO-000120_EnableSMBSigning.ps1
+    
+    Example syntax:
+        PS C:\> .\WN11-SO-000120_EnableSMBSigning.ps1
 #>
 
 # Set RequireSecuritySignature to 1 (Require SMB server signing)
