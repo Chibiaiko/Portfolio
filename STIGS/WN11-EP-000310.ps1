@@ -22,8 +22,9 @@
 
 .USAGE
     Run PowerShell as Administrator.
+   
     Example syntax:
-    PS C:\> .\Set-DeviceEnumerationPolicy.ps1
+        PS C:\> .\Set-DeviceEnumerationPolicy.ps1
 #>
 
 # Define the registry path and value
