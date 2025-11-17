@@ -5,12 +5,12 @@
 
 # CTF: Papertrail Threat Analysis Report
 
-**Analyst:** Alexis McGuire  
-**Start:** 2025-11-09 JST  
-**End:** 2025-11-16 JST  
-**Completed:** 2025-11-12 JST
+👩‍💻**Analyst:** Alexis McGuire  
+📅**Start:** 2025-11-09 JST  
+📅**End:** 2025-11-16 JST  
+✅**Completed:** 2025-11-12 JST
 
-**Report Generated:** 2025-11-13 JST
+📄**Report Generated:** 2025-11-13 JST
 
 ---
 
