@@ -1,3 +1,10 @@
+
+<p align="center">
+  <img src="https://github.com/Chibiaiko/Chibiaiko/blob/main/Images/CTF%20image.png?raw=true" alt="CTF image" />
+</p>
+
+
+
 In cybersecurity, a CTF is a fun way to learn hacking skills, hands-on. You may be wondering what all the hype is about. 
 Where can you learn about CTFs? What happens during a CTF?
 
